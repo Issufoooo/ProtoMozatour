@@ -135,6 +135,8 @@ nav.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(16px);box-shadow
 .gitem .goverlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,18,32,.6) 0%,transparent 55%);opacity:0;transition:opacity .3s;}
 .gitem:hover .goverlay{opacity:1;}
 .gitem.hidden{display:none;}
+.gitem.gextra{display:none;}
+.gitem.gextra.visible{display:block;}
 
 /* CALENDAR */
 #calendar{padding-bottom:2.5rem;}
@@ -340,14 +342,14 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
 
 <section id="hero">
   <div class="hslides" id="hslides">
-    <div class="hslide on"><img src="assets/Chimanimani/1.jpg" alt="Chimanimani — MozaTour"></div>
-    <div class="hslide"><img src="assets/Gorongosa/1.jpg" alt="Gorongosa — MozaTour" loading="lazy" decoding="async"></div>
-    <div class="hslide"><img src="assets/Mutarazi Falls/1.jpg" alt="Mutarazi Falls — MozaTour" loading="lazy" decoding="async"></div>
-    <div class="hslide"><img src="assets/Victoria Falls/1.jpeg" alt="Victoria Falls — MozaTour" loading="lazy" decoding="async"></div>
-    <div class="hslide"><img src="assets/Ilha de moçambique/1.jpg" alt="Ilha de Moçambique — MozaTour" loading="lazy" decoding="async"></div>
+    <div class="hslide on"><img src="assets/Victoria Falls/3.jpg" alt="Victoria Falls — MozaTour"></div>
+    <div class="hslide"><img src="assets/Chimanimani/1.jpg" alt="Chimanimani — MozaTour" loading="lazy" decoding="async"></div>
+    <div class="hslide"><img src="assets/Gorongosa/4.jpg" alt="Gorongosa — MozaTour" loading="lazy" decoding="async"></div>
+    <div class="hslide"><img src="assets/Ilha de moçambique/3.jpg" alt="Ilha de Moçambique — MozaTour" loading="lazy" decoding="async"></div>
+    <div class="hslide"><img src="assets/Maputo/4.jpg" alt="Maputo — MozaTour" loading="lazy" decoding="async"></div>
   </div>
   <div class="hveil"></div>
-  <span class="hlabel" id="hlabel">Chimanimani</span>
+  <span class="hlabel" id="hlabel">Victoria Falls</span>
   <div class="hcontent">
     <div class="heyebrow"><span class="ebdot"></span> <span data-i18n="hero_eyebrow">Viagens 2026 • Moçambique</span></div>
     <h1 class="htitle"><span data-i18n="hero_title_1">Explore</span> <span class="t" data-i18n="hero_title_2">Moçambique</span> <span data-i18n="hero_title_3">com a</span> <span class="o">MozaTour</span></h1>
@@ -398,9 +400,9 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
       data-dates="23–24 Maio" data-dates-en="23–24 May"
       data-includes="Transporte ida e volta;Alimentação incluída;Actividades na praia;Experiência de campismo"
       data-desc="Dois dias de praia, fogueira e desconexão total. A Praia de Sengo com jeito de aventura e vibes de grupo."
-      data-img="assets/Gorongosa/3.jpg">
+      data-img="assets/Sengo/1.jpg">
       <div class="tcimg">
-        <img src="assets/Gorongosa/3.jpg" alt="Sengo Camping" loading="lazy" decoding="async">
+        <img src="assets/Sengo/1.jpg" alt="Sengo Camping" loading="lazy" decoding="async">
         <div class="tcveil"></div>
         <div class="tcbadge" data-i18n="badge_camping">Camping</div>
         <div class="tcdate" data-i18n="td_sengo">23–24 Mai</div>
@@ -482,9 +484,9 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
       data-dates="26–22 Julho" data-dates-en="26–22 July"
       data-includes="Passagem aérea ida e volta;Hotel (3 noites);Experiência gastronómica;City tour cultural e histórico;Transfers e guia acompanhante"
       data-desc="Lourenço Marques hoje é Maputo — mas as histórias ficaram. Uma cidade com personalidade, gastronomia e alma própria."
-      data-img="assets/Chimanimani/3.jpg">
+      data-img="assets/Maputo/1.jpg">
       <div class="tcimg">
-        <img src="assets/Chimanimani/3.jpg" alt="Turismo Urbano Maputo" loading="lazy" decoding="async">
+        <img src="assets/Maputo/1.jpg" alt="Turismo Urbano Maputo" loading="lazy" decoding="async">
         <div class="tcveil"></div>
         <div class="tcbadge" data-i18n="badge_urban">Urbano</div>
         <div class="tcdate" data-i18n="td_map">Jul</div>
@@ -538,9 +540,9 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
       data-dates="02–05 Outubro" data-dates-en="02–05 October"
       data-includes="Passagem aérea ida e volta;3 noites de alojamento;Passeio de barco (Bazaruto);1 refeição incluída;Transfers e guia acompanhante"
       data-desc="Arquipélago de Bazaruto, água cristalina e praias sem fim. O paraíso que Moçambique guarda para quem vai longe."
-      data-img="assets/Ilha de moçambique/2.jpg">
+      data-img="assets/Vilankulos/1.jpg">
       <div class="tcimg">
-        <img src="assets/Ilha de moçambique/2.jpg" alt="Vilankulos Inhambane" loading="lazy" decoding="async">
+        <img src="assets/Vilankulos/1.jpg" alt="Vilankulos Inhambane" loading="lazy" decoding="async">
         <div class="tcveil"></div>
         <div class="tcbadge" data-i18n="tag_beach">Praia</div>
         <div class="tcdate" data-i18n="td_vil">02–05 Out</div>
@@ -552,6 +554,34 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
         <div class="tcfoot">
           <div class="tcprice">68.000 <small data-i18n="per_person">MZN / pessoa</small></div>
           <a class="tcwa" href="https://wa.me/258879847182?text=Ol%C3%A1%20MozaTour%2C%20quero%20reservar%20a%20viagem%20Vilankulos%20Inhambane%20em%2002-05%20Outubro.%20Ainda%20h%C3%A1%20vagas%3F" target="_blank" rel="noopener" aria-label="WhatsApp Vilankulos">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" fill="#25D366"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Victoria Falls -->
+    <div class="tcard"
+      data-name="Victoria Falls — Zimbabwe"
+      data-region="Zimbabwe"
+      data-price="80.000"
+      data-dates="25–28 Novembro" data-dates-en="25–28 November"
+      data-includes="Viagem terrestre até Harare;Voo Harare–Victoria Falls–Harare;3 noites de hospedagem;Todas refeições incluídas;Visita guiada às Cataratas"
+      data-desc="Uma das sete maravilhas naturais do mundo. Victoria Falls não é um destino, é uma experiência que marca."
+      data-img="assets/Victoria Falls/1.jpeg">
+      <div class="tcimg">
+        <img src="assets/Victoria Falls/1.jpeg" alt="Victoria Falls" loading="lazy" decoding="async">
+        <div class="tcveil"></div>
+        <div class="tcbadge" data-i18n="badge_zim">Zimbabwe</div>
+        <div class="tcdate" data-i18n="td_vic">25–28 Nov</div>
+      </div>
+      <div class="tcbody">
+        <div class="tcregion">Zimbabwe</div>
+        <div class="tcname">Victoria Falls</div>
+        <div class="tctags"><div class="ttag" data-i18n="tag_waterfall">Cascatas</div><div class="ttag" data-i18n="tag_nature">Natureza</div><div class="ttag" data-i18n="tag_safari">Safari</div></div>
+        <div class="tcfoot">
+          <div class="tcprice">80.000 <small data-i18n="per_person">MZN / pessoa</small></div>
+          <a class="tcwa" href="https://wa.me/258879847182?text=Ol%C3%A1%20MozaTour%2C%20quero%20reservar%20a%20viagem%20Victoria%20Falls%20Zimbabwe%20em%2025-28%20Novembro.%20Ainda%20h%C3%A1%20vagas%3F" target="_blank" rel="noopener" aria-label="WhatsApp Victoria Falls">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" fill="#25D366"/></svg>
           </a>
         </div>
@@ -598,42 +628,66 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
 
 <section id="gallery">
   <div class="gfilters">
-    <button class="gfbtn active" data-filter="all" data-i18n="filter_all">Todos</button>
+    <button class="gfbtn" data-filter="all" data-i18n="filter_all">Todos</button>
+    <button class="gfbtn" data-filter="Sengo">Sengo</button>
     <button class="gfbtn" data-filter="Chimanimani">Chimanimani</button>
     <button class="gfbtn" data-filter="Gorongosa">Gorongosa</button>
+    <button class="gfbtn" data-filter="Maputo">Maputo</button>
     <button class="gfbtn" data-filter="Mutarazi">Mutarazi Falls</button>
     <button class="gfbtn" data-filter="Victoria">Victoria Falls</button>
+    <button class="gfbtn" data-filter="Vilankulos">Vilankulos</button>
     <button class="gfbtn" data-filter="Ilha">Ilha</button>
   </div>
   <div class="ggrid" id="ggrid">
+    <!-- Sengo -->
+    <div class="gitem" data-dest="Sengo" data-src="assets/Sengo/1.jpg"><img src="assets/Sengo/1.jpg" alt="Sengo 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Sengo" data-src="assets/Sengo/2.jpg"><img src="assets/Sengo/2.jpg" alt="Sengo 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Sengo" data-src="assets/Sengo/3.jpg"><img src="assets/Sengo/3.jpg" alt="Sengo 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Sengo" data-src="assets/Sengo/4.jpg"><img src="assets/Sengo/4.jpg" alt="Sengo 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
     <!-- Chimanimani -->
     <div class="gitem" data-dest="Chimanimani" data-src="assets/Chimanimani/1.jpg"><img src="assets/Chimanimani/1.jpg" alt="Chimanimani 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Chimanimani" data-src="assets/Chimanimani/2.jpg"><img src="assets/Chimanimani/2.jpg" alt="Chimanimani 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Chimanimani" data-src="assets/Chimanimani/3.jpg"><img src="assets/Chimanimani/3.jpg" alt="Chimanimani 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Chimanimani" data-src="assets/Chimanimani/4.jpg"><img src="assets/Chimanimani/4.jpg" alt="Chimanimani 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Chimanimani" data-src="assets/Chimanimani/5.jpg"><img src="assets/Chimanimani/5.jpg" alt="Chimanimani 5" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Chimanimani" data-src="assets/Chimanimani/2.jpg"><img src="assets/Chimanimani/2.jpg" alt="Chimanimani 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Chimanimani" data-src="assets/Chimanimani/3.jpg"><img src="assets/Chimanimani/3.jpg" alt="Chimanimani 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Chimanimani" data-src="assets/Chimanimani/4.jpg"><img src="assets/Chimanimani/4.jpg" alt="Chimanimani 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Chimanimani" data-src="assets/Chimanimani/5.jpg"><img src="assets/Chimanimani/5.jpg" alt="Chimanimani 5" loading="lazy" decoding="async"><div class="goverlay"></div></div>
     <!-- Gorongosa -->
-    <div class="gitem" data-dest="Gorongosa" data-src="assets/Gorongosa/1.jpg"><img src="assets/Gorongosa/1.jpg" alt="Gorongosa 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Gorongosa" data-src="assets/Gorongosa/2.jpg"><img src="assets/Gorongosa/2.jpg" alt="Gorongosa 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Gorongosa" data-src="assets/Gorongosa/3.jpg"><img src="assets/Gorongosa/3.jpg" alt="Gorongosa 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Gorongosa" data-src="assets/Gorongosa/4.jpg"><img src="assets/Gorongosa/4.jpg" alt="Gorongosa 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Gorongosa" data-src="assets/Gorongosa/5.jpg"><img src="assets/Gorongosa/5.jpg" alt="Gorongosa 5" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Gorongosa" data-src="assets/Gorongosa/1.jpg"><img src="assets/Gorongosa/1.jpg" alt="Gorongosa 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Gorongosa" data-src="assets/Gorongosa/2.jpg"><img src="assets/Gorongosa/2.jpg" alt="Gorongosa 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Gorongosa" data-src="assets/Gorongosa/3.jpg"><img src="assets/Gorongosa/3.jpg" alt="Gorongosa 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Gorongosa" data-src="assets/Gorongosa/4.jpg"><img src="assets/Gorongosa/4.jpg" alt="Gorongosa 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Gorongosa" data-src="assets/Gorongosa/5.jpg"><img src="assets/Gorongosa/5.jpg" alt="Gorongosa 5" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <!-- Maputo -->
+    <div class="gitem gextra" data-dest="Maputo" data-src="assets/Maputo/1.jpg"><img src="assets/Maputo/1.jpg" alt="Maputo 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Maputo" data-src="assets/Maputo/2.jpg"><img src="assets/Maputo/2.jpg" alt="Maputo 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Maputo" data-src="assets/Maputo/3.jpg"><img src="assets/Maputo/3.jpg" alt="Maputo 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Maputo" data-src="assets/Maputo/4.jpg"><img src="assets/Maputo/4.jpg" alt="Maputo 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
     <!-- Mutarazi Falls -->
-    <div class="gitem" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/1.jpg"><img src="assets/Mutarazi Falls/1.jpg" alt="Mutarazi Falls 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/2.jpg"><img src="assets/Mutarazi Falls/2.jpg" alt="Mutarazi Falls 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/3.jpg"><img src="assets/Mutarazi Falls/3.jpg" alt="Mutarazi Falls 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/4.jpg"><img src="assets/Mutarazi Falls/4.jpg" alt="Mutarazi Falls 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/5.jpg"><img src="assets/Mutarazi Falls/5.jpg" alt="Mutarazi Falls 5" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/1.jpg"><img src="assets/Mutarazi Falls/1.jpg" alt="Mutarazi Falls 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/2.jpg"><img src="assets/Mutarazi Falls/2.jpg" alt="Mutarazi Falls 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/3.jpg"><img src="assets/Mutarazi Falls/3.jpg" alt="Mutarazi Falls 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/4.jpg"><img src="assets/Mutarazi Falls/4.jpg" alt="Mutarazi Falls 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Mutarazi" data-src="assets/Mutarazi Falls/5.jpg"><img src="assets/Mutarazi Falls/5.jpg" alt="Mutarazi Falls 5" loading="lazy" decoding="async"><div class="goverlay"></div></div>
     <!-- Victoria Falls -->
-    <div class="gitem" data-dest="Victoria" data-src="assets/Victoria Falls/1.jpeg"><img src="assets/Victoria Falls/1.jpeg" alt="Victoria Falls 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Victoria" data-src="assets/Victoria Falls/2.jpeg"><img src="assets/Victoria Falls/2.jpeg" alt="Victoria Falls 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Victoria" data-src="assets/Victoria Falls/3.jpg"><img src="assets/Victoria Falls/3.jpg" alt="Victoria Falls 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Victoria" data-src="assets/Victoria Falls/4.jpg"><img src="assets/Victoria Falls/4.jpg" alt="Victoria Falls 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Victoria" data-src="assets/Victoria Falls/1.jpeg"><img src="assets/Victoria Falls/1.jpeg" alt="Victoria Falls 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Victoria" data-src="assets/Victoria Falls/2.jpeg"><img src="assets/Victoria Falls/2.jpeg" alt="Victoria Falls 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Victoria" data-src="assets/Victoria Falls/3.jpg"><img src="assets/Victoria Falls/3.jpg" alt="Victoria Falls 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Victoria" data-src="assets/Victoria Falls/4.jpg"><img src="assets/Victoria Falls/4.jpg" alt="Victoria Falls 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <!-- Vilankulos -->
+    <div class="gitem gextra" data-dest="Vilankulos" data-src="assets/Vilankulos/1.jpg"><img src="assets/Vilankulos/1.jpg" alt="Vilankulos 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Vilankulos" data-src="assets/Vilankulos/2.jpg"><img src="assets/Vilankulos/2.jpg" alt="Vilankulos 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Vilankulos" data-src="assets/Vilankulos/3.jpg"><img src="assets/Vilankulos/3.jpg" alt="Vilankulos 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Vilankulos" data-src="assets/Vilankulos/4.jpg"><img src="assets/Vilankulos/4.jpg" alt="Vilankulos 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
     <!-- Ilha de Moçambique -->
-    <div class="gitem" data-dest="Ilha" data-src="assets/Ilha de moçambique/1.jpg"><img src="assets/Ilha de moçambique/1.jpg" alt="Ilha de Moçambique 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Ilha" data-src="assets/Ilha de moçambique/2.jpg"><img src="assets/Ilha de moçambique/2.jpg" alt="Ilha de Moçambique 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Ilha" data-src="assets/Ilha de moçambique/3.jpg"><img src="assets/Ilha de moçambique/3.jpg" alt="Ilha de Moçambique 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
-    <div class="gitem" data-dest="Ilha" data-src="assets/Ilha de moçambique/4.jpg"><img src="assets/Ilha de moçambique/4.jpg" alt="Ilha de Moçambique 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Ilha" data-src="assets/Ilha de moçambique/1.jpg"><img src="assets/Ilha de moçambique/1.jpg" alt="Ilha de Moçambique 1" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Ilha" data-src="assets/Ilha de moçambique/2.jpg"><img src="assets/Ilha de moçambique/2.jpg" alt="Ilha de Moçambique 2" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Ilha" data-src="assets/Ilha de moçambique/3.jpg"><img src="assets/Ilha de moçambique/3.jpg" alt="Ilha de Moçambique 3" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+    <div class="gitem gextra" data-dest="Ilha" data-src="assets/Ilha de moçambique/4.jpg"><img src="assets/Ilha de moçambique/4.jpg" alt="Ilha de Moçambique 4" loading="lazy" decoding="async"><div class="goverlay"></div></div>
+  </div>
+  <div style="text-align:center;padding:1rem 1.25rem 0;">
+    <button id="g-more-btn" style="display:inline-flex;align-items:center;gap:.45rem;padding:.65rem 1.4rem;border-radius:99px;border:1.5px solid var(--teal-border);background:#fff;color:var(--teal);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;min-height:44px;">
+      <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span id="g-more-label" data-i18n="gallery_more">Ver mais fotos</span>
+    </button>
   </div>
 </section>
 
@@ -651,7 +705,7 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
       data-dates="28 Mar" data-dates-en="28 Mar" data-price="—" data-region="Sofala"
       data-includes="Transporte ida e volta;Actividades na praia;Alimentação"
       data-desc="Um dia de praia, sol e boa energia na Praia de Sengo. Sem complicação, só vibes."
-      data-img="assets/Gorongosa/2.jpg">
+      data-img="assets/Sengo/2.jpg">
       <div class="calm"><span class="calm-m" data-i18n="m_mar">Mar</span><span class="calm-d">28</span></div>
       <div class="cali"><div class="caln">Sengo Full Day</div><div class="cals" data-i18n="cal_sub1">Sofala • Praia • 1 dia</div></div>
       <div class="calr"><div class="calp">—</div><div class="calarow">›</div></div>
@@ -671,7 +725,7 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
       data-dates="23–24 Maio" data-dates-en="23–24 May" data-price="6.000" data-region="Sofala"
       data-includes="Transporte ida e volta;Alimentação incluída;Actividades na praia;Experiência de campismo"
       data-desc="Dois dias de praia, fogueira e desconexão total na Praia de Sengo."
-      data-img="assets/Gorongosa/3.jpg">
+      data-img="assets/Sengo/3.jpg">
       <div class="calm"><span class="calm-m" data-i18n="m_may">Mai</span><span class="calm-d">23</span></div>
       <div class="cali"><div class="caln">Sengo Camping Experience</div><div class="cals" data-i18n="cal_sub3">Sofala • Camping • 2 dias</div></div>
       <div class="calr"><div class="calp">6.000</div><div class="calarow">›</div></div>
@@ -691,7 +745,7 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
       data-dates="26 Jul – 22 Jul" data-dates-en="26 Jul – 22 Jul" data-price="65.000" data-region="Maputo"
       data-includes="Passagem aérea ida e volta;Hotel (3 noites);Experiência gastronómica;City tour;Transfers e guia"
       data-desc="Lourenço Marques hoje é Maputo — mas as histórias ficaram."
-      data-img="assets/Chimanimani/5.jpg">
+      data-img="assets/Maputo/2.jpg">
       <div class="calm"><span class="calm-m" data-i18n="m_jul">Jul</span><span class="calm-d">26</span></div>
       <div class="cali"><div class="caln">Turismo Urbano — Maputo</div><div class="cals" data-i18n="cal_sub5">Maputo • City Tour • 3 noites</div></div>
       <div class="calr"><div class="calp">65.000</div><div class="calarow">›</div></div>
@@ -721,7 +775,7 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
       data-dates="02–05 Outubro" data-dates-en="02–05 October" data-price="68.000" data-region="Inhambane"
       data-includes="Passagem aérea ida e volta;3 noites de alojamento;Passeio de barco (Bazaruto);1 refeição incluída;Transfers e guia"
       data-desc="Bazaruto, água cristalina e praias que não têm fim."
-      data-img="assets/Ilha de moçambique/3.jpg">
+      data-img="assets/Vilankulos/2.jpg">
       <div class="calm"><span class="calm-m" data-i18n="m_oct">Out</span><span class="calm-d">02</span></div>
       <div class="cali"><div class="caln">Vilankulos — Inhambane</div><div class="cals" data-i18n="cal_sub8">Inhambane • Bazaruto • 4 dias</div></div>
       <div class="calr"><div class="calp">68.000</div><div class="calarow">›</div></div>
@@ -983,6 +1037,7 @@ const i18n = {
     trips_eyebrow:'Viagens em destaque',trips_title_1:'Escolha a',trips_title_2:'próxima',trips_title_3:'aventura',
     trips_sub:'Clique num card para ver detalhes e reservar.',
     gallery_eyebrow:'Galeria',gallery_title_1:'Momentos',gallery_sub:'Clique em qualquer foto para ver em ecrã inteiro.',
+    gallery_more:'Ver mais fotos',gallery_less:'Ver menos',
     filter_all:'Todos',
     cal_eyebrow:'Calendário',cal_title_1:'Próximas',cal_title_2:'datas',cal_sub:'Toque numa data para ver detalhes e reservar.',
     how_eyebrow:'Como funciona',how_title_1:'Reservar é',how_title_2:'simples',how_sub:'3 passos e já está.',
@@ -1008,7 +1063,7 @@ const i18n = {
     footer_tag:'Viagens, camping e experiências em Moçambique. Reserva rápida e suporte WhatsApp.',
     trip4_name:'Turismo Urbano',
     m_mar:'Mar',m_apr:'Abr',m_may:'Mai',m_jun:'Jun',m_jul:'Jul',m_aug:'Ago',m_sep:'Set',m_oct:'Out',m_nov:'Nov',m_dec:'Dez',
-    td_sengo:'23–24 Mai',td_chim:'Abr / Jun',td_goro:'Abr / Ago',td_map:'Jul',td_mut:'24–27 Set',td_vil:'02–05 Out',td_ilha:'17–20 Dez',
+    td_sengo:'23–24 Mai',td_chim:'Abr / Jun',td_goro:'Abr / Ago',td_map:'Jul',td_mut:'24–27 Set',td_vil:'02–05 Out',td_ilha:'17–20 Dez',td_vic:'25–28 Nov',
     modal_dates:'Datas',modal_price:'Preço',modal_includes:'Inclui',modal_per_person:'Total (por pessoa)',
     per_person:'MZN / pessoa',
     badge_camping:'Camping',badge_safari:'Safari',badge_urban:'Urbano',badge_beach:'Praia',badge_premium:'Premium',badge_zim:'Zimbabwe',badge_highlight:'Destaque 2026',badge_culture:'Cultura',
@@ -1027,6 +1082,7 @@ const i18n = {
     trips_eyebrow:'Featured Trips',trips_title_1:'Choose your',trips_title_2:'next',trips_title_3:'adventure',
     trips_sub:'Tap a card to see details and book.',
     gallery_eyebrow:'Gallery',gallery_title_1:'MozaTour',gallery_sub:'Tap any photo to view fullscreen.',
+    gallery_more:'See more photos',gallery_less:'See less',
     filter_all:'All',
     cal_eyebrow:'Calendar',cal_title_1:'Upcoming',cal_title_2:'dates',cal_sub:'Tap a date to see details and book.',
     how_eyebrow:'How it works',how_title_1:'Booking is',how_title_2:'simple',how_sub:'3 steps and you\'re set.',
@@ -1054,7 +1110,7 @@ const i18n = {
     per_person:'MZN / person',
     trip4_name:'Urban Tourism',
     m_mar:'Mar',m_apr:'Apr',m_may:'May',m_jun:'Jun',m_jul:'Jul',m_aug:'Aug',m_sep:'Sep',m_oct:'Oct',m_nov:'Nov',m_dec:'Dec',
-    td_sengo:'23–24 May',td_chim:'Apr / Jun',td_goro:'Apr / Aug',td_map:'Jul',td_mut:'24–27 Sep',td_vil:'02–05 Oct',td_ilha:'17–20 Dec',
+    td_sengo:'23–24 May',td_chim:'Apr / Jun',td_goro:'Apr / Aug',td_map:'Jul',td_mut:'24–27 Sep',td_vil:'02–05 Oct',td_ilha:'17–20 Dec',td_vic:'25–28 Nov',
     badge_camping:'Camping',badge_safari:'Safari',badge_urban:'Urban',badge_beach:'Beach',badge_premium:'Premium',badge_zim:'Zimbabwe',badge_highlight:'2026 Highlight',badge_culture:'Culture',
     tag_beach:'Beach',tag_fire:'Bonfire',tag_group:'Group',tag_mountain:'Mountain',tag_trail:'Trail',tag_waterfall:'Waterfalls',tag_nature:'Nature',tag_park:'Park',tag_citytour:'City Tour',tag_gastronomy:'Gastronomy',tag_culture:'Culture',tag_skyline:'Skyline',tag_boat:'Boat',tag_bazaruto:'Bazaruto',tag_history:'History',tag_sea:'Sea',tag_camping:'Camping',tag_safari:'Safari',
     cal_sub1:'Sofala • Beach • 1 day',cal_sub2:'Manica / Sofala • 2 weekends',cal_sub3:'Sofala • Camping • 2 days',cal_sub4:'Manica • Camping • 2 days',cal_sub5:'Maputo • City Tour • 3 nights',cal_sub6:'Sofala • Safari • 2 days',cal_sub7:'Zimbabwe • Waterfalls • 4 days',cal_sub8:'Inhambane • Bazaruto • 4 days',cal_sub9:'Zimbabwe • Falls • 4 days',cal_sub10:'Nampula • Premium • 4 days'
@@ -1147,13 +1203,13 @@ function applyLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
+  // applyGallery called after init — see bottom of script
 }
 
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => applyLang(btn.dataset.lang));
 });
 
-applyLang(currentLang);
 
 /* ===================== NAV ===================== */
 const nav = document.getElementById('nav');
@@ -1167,7 +1223,7 @@ window.addEventListener('load', () => {
 });
 
 /* ===================== HERO SLIDER ===================== */
-const heroLabels = ['Chimanimani','Gorongosa','Mutarazi Falls','Victoria Falls','Ilha de Moçambique'];
+const heroLabels = ['Victoria Falls','Chimanimani','Gorongosa','Ilha de Moçambique','Maputo'];
 const slides = Array.from(document.querySelectorAll('.hslide'));
 const dotsWrap = document.getElementById('hdots');
 const dots = Array.from(dotsWrap.children);
@@ -1201,24 +1257,80 @@ document.getElementById('hero').addEventListener('touchend', e => {
 
 startHero();
 
-/* ===================== GALLERY FILTER ===================== */
+/* ===================== GALLERY FILTER + SEE MORE ===================== */
 const gfBtns = document.querySelectorAll('.gfbtn');
 const gItems = Array.from(document.querySelectorAll('.gitem'));
+const gMoreBtn = document.getElementById('g-more-btn');
+const gMoreLabel = document.getElementById('g-more-label');
+let gExpanded = false;
+let gActiveFilter = 'all';
+
+// Set "Todos" active initially
+document.querySelector('.gfbtn[data-filter="all"]').classList.add('active');
+
+function applyGallery() {
+  // First, determine which items match the filter
+  const matched = gItems.filter(item =>
+    gActiveFilter === 'all' || item.dataset.dest === gActiveFilter
+  );
+  const unmatched = gItems.filter(item =>
+    gActiveFilter !== 'all' && item.dataset.dest !== gActiveFilter
+  );
+
+  // Hide unmatched
+  unmatched.forEach(item => {
+    item.classList.add('hidden');
+    item.classList.remove('gextra', 'visible');
+  });
+
+  // Show matched: first 5 always visible, rest depend on gExpanded
+  matched.forEach((item, i) => {
+    item.classList.remove('hidden');
+    if (i < 5) {
+      item.classList.remove('gextra', 'visible');
+    } else {
+      item.classList.add('gextra');
+      if (gExpanded) {
+        item.classList.add('visible');
+      } else {
+        item.classList.remove('visible');
+      }
+    }
+  });
+
+  // Show/hide the "see more" button
+  if (matched.length > 5) {
+    gMoreBtn.style.display = 'inline-flex';
+    const lang = currentLang || 'pt';
+    gMoreLabel.textContent = gExpanded
+      ? (i18n[lang].gallery_less || 'Ver menos')
+      : (i18n[lang].gallery_more || 'Ver mais fotos');
+  } else {
+    gMoreBtn.style.display = 'none';
+  }
+}
 
 gfBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     gfBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    const f = btn.dataset.filter;
-    gItems.forEach(item => {
-      if (f === 'all' || item.dataset.dest === f) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
-    });
+    gActiveFilter = btn.dataset.filter;
+    gExpanded = false;
+    applyGallery();
   });
 });
+
+gMoreBtn.addEventListener('click', () => {
+  gExpanded = !gExpanded;
+  applyGallery();
+});
+
+applyGallery();
+
+// Init language AFTER gallery is ready
+applyLang(currentLang);
+// Keep gallery see-more label in sync on lang toggle
+document.querySelectorAll('.lang-btn').forEach(btn => { btn.addEventListener('click', applyGallery); });
 
 /* ===================== LIGHTBOX ===================== */
 const lightbox = document.getElementById('lightbox');
