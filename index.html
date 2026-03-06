@@ -208,10 +208,10 @@ nav.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(16px);box-shadow
 .fwabtn svg{width:16px;height:16px;}
 
 /* SERVICES SECTION */
-#services{padding:0 1.25rem 2.5rem;}
-.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.4rem;}
-@media(min-width:600px){.svc-grid{grid-template-columns:repeat(3,1fr);}}
-.svc-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.1rem;box-shadow:var(--sm);display:flex;flex-direction:column;gap:.6rem;transition:box-shadow .2s,transform .15s;}
+#services{padding-bottom:2.5rem;}
+.svc-row{display:flex;gap:.9rem;padding:1.4rem 1.25rem;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.svc-row::-webkit-scrollbar{display:none;}
+.svc-card{flex:0 0 180px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.1rem;box-shadow:var(--sm);display:flex;flex-direction:column;gap:.6rem;transition:box-shadow .2s,transform .15s;}
 .svc-card:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
 .svc-icon{width:42px;height:42px;border-radius:12px;background:var(--teal-bg);border:1px solid var(--teal-border);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
 .svc-name{font-size:.78rem;font-weight:800;color:var(--black);line-height:1.3;}
@@ -910,7 +910,7 @@ footer{background:var(--black);padding:2.25rem 1.25rem 2rem;}
   <div class="ssub" data-i18n="svc_sub">Tudo o que precisa para a sua viagem perfeita, num so lugar.</div>
 </section>
 <section id="services">
-  <div class="svc-grid reveal">
+  <div class="svc-row">
     <div class="svc-card">
       <div class="svc-icon">&#9992;</div>
       <div class="svc-name" data-i18n="svc_1_name">Passagens Aereas</div>
